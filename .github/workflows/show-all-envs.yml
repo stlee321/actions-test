@@ -1,0 +1,8 @@
+name: Show All Environment Variables
+on: [push]
+jobs:
+  show-all-envs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print all envs
+        run: env
